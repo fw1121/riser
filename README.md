@@ -86,7 +86,7 @@ Usage:
 
    1. Simulate data for a particular set of genomes. 
 
-   (Note: If option 2 used to download riser, replace 'riser' in the script below with 'riser-master' or rename 'riser-master' to 'riser')
+   (Note: If option 2 is used to download riser, replace 'riser' in the script below with 'riser-master' or rename 'riser-master' to 'riser')
 
    The default config.ini file is in ./riser/config/ directory - to run RiSER you need to modify the initial .ini file. However make sure to first run RiSER with the configuration file ./riser/config/config_simulation.example provided as an example on how to run the simulation:
 
