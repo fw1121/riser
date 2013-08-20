@@ -1,0 +1,30 @@
+# Example of the config.ini file for running RiSER's simulation 
+
+[genbank]
+name:NC_001806.1
+location:PATH_TO_RiSER_DIR/RiSER/examples/genomes/
+mut_rates:0,10
+
+
+[custom]
+name:NC_001357.1
+fasta:PATH_TO_RiSER_DIR/RiSER/examples/genomes/NC_001357.1.fa
+transcripts:PATH_TO_RiSER_DIR/RiSER/examples/genomes/NC_001357.1_transcripts.txt
+mut_rates:0,10
+
+
+[project_dir]
+name:test
+location:PATH_TO_test_DIR
+
+
+[simulator]
+read_length:100
+fold_coverage:10
+platform_type:illumina
+# use this with the 32bit machine
+#executable:PATH_TO_RiSER_DIR/RiSER/bin/ART/Linux32/
+# use this with the 64bit machine
+#executable:PATH_TO_RiSER_DIR/RiSER/bin/ART/Linux64/
+replicates:1
+

@@ -1,0 +1,6 @@
+This is the read profile of the 454 Genome Sequencer FLX System
+ 1) qual_1st_profile   - homopolymer-length dependent empirical distribution of the quality score of 1st base of DNA homopolymers 
+ 2) qual_mc_profile    - Markov Chain-based empirical quality distribution of the remaining bases of DNA homopolymers 
+ 3) indel_erro_profile - undercall or overcall error profiles of DNA homopolymers 
+ 4) length_dist        - the empirical distribution of 454 read length 
+

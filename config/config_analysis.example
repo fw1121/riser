@@ -1,0 +1,21 @@
+# Example of the config.ini file for running RiSER's analysis. 
+
+[genbank]
+name:NC_001806.1
+
+[custom]
+name:NC_001357.1
+
+[project_dir]
+name:aligners
+location:PATH_TO_RiSER/RiSER/examples/
+
+[simulator]
+read_length:100
+fold_coverage:10
+
+
+# the aligned_files need to be in the same order as genomes ([genbank] then [custom])
+[aligners]
+name:BFAST,BLAST
+aligned_files:PATH_TO_RiSER/RiSER/examples/aligners/NC_001806.1,PATH_TO_RiSER/RiSER/examples/aligners/NC_001357.1
