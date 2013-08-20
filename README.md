@@ -69,12 +69,14 @@ To install:
 option 1:
     
   $ git clone https://github.com/oicr-ibc/riser.git 
+
   $ cd riser
 
 
 option 2:
 
   $ wget https://github.com/oicr-ibc/riser/archive/master.zip
+
   $ cd riser-master		
 
 Done! No installation is required, all Python script are in ./riser/bin/ and should be compatible with your system
@@ -84,7 +86,7 @@ Usage:
 
 1. Simulate data for a particular set of genomes. 
 
-If option 2 used for download replace 'riser' in the script below with 'riser-master'.
+(Note: If option 2 used to download riser, replace 'riser' in the script below with 'riser-master'.)
 
    The default config.ini file is in ./riser/config/ directory - to run RiSER you need to modify the initial .ini file. However make sure to first run RiSER with the configuration file ./riser/config/config_simulation.example provided as an example on how to run the simulation:
 
