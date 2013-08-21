@@ -70,35 +70,30 @@ option 1:
     
   $ git clone https://github.com/oicr-ibc/riser.git 
 
-  $ cd riser
-
 
 option 2:
 
   $ wget https://github.com/oicr-ibc/riser/archive/master.zip
 
-  $ cd riser-master		
 
-Done! No installation is required, all Python script are in ./riser/bin/ and should be compatible with your system
+Done! No installation is required, all Python script are in /PATH_TO_THE_RISER_DIR/bin/ and should be compatible with your system
 
 Usage: 	 
 ------  	
 
    1. Simulate data for a particular set of genomes. 
 
-   (Note: If option 2 is used to download riser, replace 'riser' in the script below with 'riser-master' or rename 'riser-master' to 'riser')
+   The default config.ini file is in /PATH_TO_THE_RISER_DIR/config/ directory - to run RiSER you need to modify the initial .ini file. However make sure to first run RiSER with the configuration file /PATH_TO_THE_RISER_DIR/config/config_simulation.example provided as an example on how to run the simulation:
 
-   The default config.ini file is in ./riser/config/ directory - to run RiSER you need to modify the initial .ini file. However make sure to first run RiSER with the configuration file ./riser/config/config_simulation.example provided as an example on how to run the simulation:
+    cp  /PATH_TO_THE_RISER_DIR/config/config.ini /PATH_TO_THE_RISER_DIR/config/config.ini.save
 
-    cp  ./riser/config/config.ini ./riser/config/config.ini.save
-
-    cp  ./riser/config/config_simulation.example ./riser/config/config.ini
+    cp  /PATH_TO_THE_RISER_DIR/config/config_simulation.example /PATH_TO_THE_RISER_DIR/config/config.ini
     
     edit the config.ini file.
 
     run the simulation script:
     
-    python bin/run_simulator.py
+    python /PATH_TO_THE_RISER_DIR/bin/run_simulator.py
 
    (i) Note, simulated results will be outputted to the directory specified in the .ini file (see config_simulation.example). Also make sure to check if you are running a 32-bit or 64-bit machine (see config_simulation.example under [aligners])
 
@@ -107,29 +102,29 @@ Usage:
 
    2. Compare the aligner's output to the truth file (from simulated data):
 
-   Make sure to first run RiSER with the configuration file ./riser/config/config_analysis.example provided as an example on how to run the analysis:
+   Make sure to first run RiSER with the configuration file /PATH_TO_THE_RISER_DIR/config/config_analysis.example provided as an example on how to run the analysis:
 
-    cp  ./riser/config/config.ini ./riser/config/config.ini.save
+    cp  /PATH_TO_THE_RISER_DIR/config/config.ini /PATH_TO_THE_RISER_DIR/config/config.ini.save
 
-    cp  ./riser/config/config_analysis.example ./riser/config/config.ini
+    cp  /PATH_TO_THE_RISER_DIR/config/config_analysis.example /PATH_TO_THE_RISER_DIR/config/config.ini
 
     edit the config.ini	
 	
     run the analysis script:
 
-    python bin/run_analysis.py
+    python /PATH_TO_THE_RISER_DIR/bin/run_analysis.py
 
    The summary of results will be outputted to the aligner's directory specified by the user in the .ini file (see config_analysis.example)
 
     In the example provided, results for the NC_001357.1 genome and the BFAST aligner will be outputted to:
 
-    ./riser/examples/aligners/NC_001357.1/BFAST/simulated_transcripts_0.fa/Rdata_multi/
+    /PATH_TO_THE_RISER_DIR/examples/aligners/NC_001357.1/BFAST/simulated_transcripts_0.fa/Rdata_multi/
 
-    ./riser/examples/aligners/NC_001357.1/BFAST/simulated_transcripts_10.fa/Rdata_multi/
+    /PATH_TO_THE_RISER_DIR/examples/aligners/NC_001357.1/BFAST/simulated_transcripts_10.fa/Rdata_multi/
    	
    Note that the results are outputted as R data files, to view them launch R and load results as shown below: 
 
-    >cd  ./riser/examples/aligners/NC_001357.1/BFAST/simulated_transcripts_0.fa/Rdata_multi/
+    >cd  /PATH_TO_THE_RISER_DIR/examples/aligners/NC_001357.1/BFAST/simulated_transcripts_0.fa/Rdata_multi/
 
     >R
  
@@ -140,7 +135,7 @@ Usage:
    
 **File format for user specified transcript files**:	 
 
-In the case a transcript file is specified by the user (see also ./riser/examples/genomes/NC_001357.1_transcripts.txt) each row in the file should designate a single transcript and columns (tab delimited) should be set as in the order shown below:
+In the case a transcript file is specified by the user (see also /PATH_TO_THE_RISER_DIR/examples/genomes/NC_001357.1_transcripts.txt) each row in the file should designate a single transcript and columns (tab delimited) should be set as in the order shown below:
 
 transcript_id (e.g. GI number or any other unique id) \t transcript_name \t genome_id (e.g. GenBank Accession) \t strand \t transcript_START \t transcript_END \t transcript_START \t transcript_END \t numb_exons \t exons_START(the START positions of each exon needs to be separated by commas) \t exons_END(the END positions of each exon needs to be separated by commas (and in the same order as the START positions))   	  	             						       
 
