@@ -9,13 +9,13 @@ planning and implementation for our projects. Also if you find **RiSER** useful
 in your research feel free to let us know.
 
 RiSER is brought to you by:
-      Vincent Ferretti
-      Ivan Borozan 
-      Stuart Watt
+ * Vincent Ferretti
+ * Ivan Borozan 
+ * Stuart Watt
 
 
 RiSER was originally developed by:
-      Ivan Borozan
+ * Ivan Borozan
 
 
 Getting Started
@@ -25,8 +25,10 @@ Minimum Requirements
 -----------------------
 Tested on UBUNTU-12.04
 
-R (2.14.1)
-apt-get install r-base
+__R (2.14.1):__
+```bash
+$ apt-get install r-base
+```
 
 Python (2.7.3) - the program assumes that Python is in `/usr/bin/python`
 perl (5.14.2)
@@ -34,7 +36,7 @@ samtools (0.1.18)
 
 Following Perl module needs to be installed:
 
-bioperl:
+__bioperl:__
 ```bash
 $ apt-get install bioperl
 ```
@@ -46,32 +48,32 @@ If you do not have pip installed, install it as shown below:
 $ sudo apt-get install python-pip python-dev  
 ```
 
-numpy(1.6.2):
+__numpy(1.6.2):__
 ```bash
 $ sudo pip install numpy
 ```
 
-BioPython(1.6):
+__BioPython(1.6):__
 ```bash
 $ sudo pip install biopython 
 ```
 
-rpy2(2.3.1):
+__rpy2(2.3.1):__
 ```bash
 $ sudo pip install rpy2
 ```
 
-setuptools(1.0):
+__setuptools(1.0):__
 ```bash
 $ sudo easy_install -U distribute
 ```
 
-Cython(0.17.4)
+__Cython(0.17.4):__
 ```bash
 $ sudo pip install cython
 ```
 
-pysam(0.6):
+__pysam(0.6):__
 ```bash
 $ sudo pip install pysam
 ```
@@ -82,7 +84,7 @@ This version of RiSER has has been tested under Linux (Ubuntu 12.04).
 
 To install:
 
-option 1:
+Option 1:
     
 ```bash
 $ sudo apt-get install git
@@ -90,7 +92,7 @@ $ git clone https://github.com/oicr-ibc/riser.git
 $ cd riser
 ```
 
-option 2:
+Option 2:
 
 ```bash
 $ wget https://github.com/oicr-ibc/riser/archive/master.zip
