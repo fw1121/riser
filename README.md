@@ -178,6 +178,12 @@ In the case a transcript file is specified by the user (see also `examples/genom
 
 transcript_id (e.g. GI number or any other unique id) \t transcript_name \t genome_id (e.g. GenBank Accession) \t strand \t transcript_START \t transcript_END \t transcript_START \t transcript_END \t numb_exons \t exons_START(the START positions of each exon needs to be separated by commas) \t exons_END(the END positions of each exon needs to be separated by commas (and in the same order as the START positions))   	  	             						       
 
+Datasets
+--------
+
+More datasets are available on the wiki at: https://github.com/oicr-ibc/riser/wiki/Datasets.
+
+
 License and Copyright
 ---------------------
 Licensed under the GNU General Public License, Version 3.0. See LICENSE for more details.
